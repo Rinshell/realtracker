@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite build --mode development",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@inertiajs/vue3": "^2.0.9",
+        "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/typography": "^0.5.16",
+        "@vitejs/plugin-vue": "^5.2.4",
+        "autoprefixer": "^10.4.21",
+        "axios": "^1.9.0",
+        "laravel-vite-plugin": "^1.2",
+        "lodash": "^4.17.21",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.6",
+        "vite": ">=6.3.5",
+        "vue": "^3.5.13"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.6",
+        "@vuepic/vue-datepicker": "^11.0.2",
+        "form-data": "^4.0.4",
+        "pinia": "^3.0.2"
+    }
+}
