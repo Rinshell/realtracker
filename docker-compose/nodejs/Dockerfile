@@ -1,16 +1,20 @@
 FROM node:22
 
-# Install dependencies
+# Установка зависимостей
 RUN apt-get update && apt-get install -y \
     vim \
     zip \
     unzip \
-    curl
+    curl \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Change current user
+# Изменение текущего пользователя
 USER node
+
+# Рабочая директория
+WORKDIR /var/www
 
 EXPOSE 5173
 
-# https://github.com/vitejs/vite/discussions/3396
-CMD ["sh", "-c", "npm install && npm run dev"]
+# Удерживаем контейнер в активном состоянии
+CMD ["tail", "-f", "/dev/null"]

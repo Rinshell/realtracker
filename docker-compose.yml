@@ -40,7 +40,7 @@ services:
   # MySQL контейнер
   db:
 #    image: "mysql/mysql-server:8.0"
-    image: mysql:latest
+    image: mysql:8.0
     restart: unless-stopped
     tty: true
     ports:
