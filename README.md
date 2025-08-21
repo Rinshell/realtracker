@@ -17,7 +17,6 @@ Docker Hub будет хранилищем для готового образа 
    ```
    your-docker-username/realtracker
    ```  
-   ⚠️ **Не забудьте заменить `your-docker-username` на ваш Docker Hub username**.  
 3. В настройках аккаунта создайте **Access Token** (это безопаснее, чем использовать пароль).  
    - `DOCKERHUB_USERNAME` — ваш логин  
    - `DOCKERHUB_TOKEN` — токен  
